@@ -514,7 +514,7 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    color: #eeeeee;
+    color: #f3f3f3;
   }
 
     .section-title h2::before, .section-title h2::after {
@@ -844,7 +844,7 @@ section {
 
     .purchase .box .btn-buy:hover {
       background: #ffd452;
-      color: #fff;
+      color: #111111;
     }
 
 .purchase .recommended {
@@ -853,11 +853,12 @@ section {
 
   .purchase .recommended .btn-buy {
     background: #ffd452;
-    color: #fff;
+    color: #111111;
   }
 
     .purchase .recommended .btn-buy:hover {
       background: none;
+      color: #ffd452;
     }
 
 /*--------------------------------------------------------------
@@ -876,8 +877,9 @@ section {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    margin: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    background-color: #666666;
   }
 
   .team .member .social {
@@ -914,16 +916,18 @@ section {
   }
 
     .team .member .member-info h4 {
-      font-weight: 700;
-      margin-bottom: 5px;
       font-size: 18px;
-      color: #222222;
+      font-weight: 700;
+      margin-top: 10px;
+      color: #ffffff;
     }
 
     .team .member .member-info span {
       display: block;
       font-size: 13px;
       font-weight: 400;
+      margin-top: 10px;
+      margin-bottom: 5px;
       color: #aaaaaa;
     }
 
