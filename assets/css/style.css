@@ -375,62 +375,64 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(#292929, #464646);
 }
 
-#hero .logo {
-  padding-right: 100px;
-  padding-bottom: 50px;
-}
-
-#hero .img-top img {
-  margin-bottom: 450px;
-}
-
-#hero .img-bottom img {
-  margin-top: 250px;
-}
-
-#hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: white;
-}
-
-#hero h2 {
-  color: #bbbbbb;
-  margin-bottom: 50px;
-  font-size: 24px;
-}
-
-#hero .btn-get-started {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #ffd452;
-  border: 2px solid #ffd452;
-}
-
-  #hero .btn-get-started:hover {
-    background: #ffd452;
-    color: #fff;
+  #hero .logo {
+    padding-right: 10%;
+    padding-bottom: 5%;
   }
 
-#hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
+  /*  #hero .img-top {
+    margin-bottom: 280%;
+  }
 
-@media (min-width: 1024px) {
-    #hero .hero-img img {
-      width: 267%;
+  #hero .img-bottom {
+    margin-top: 160%;
+  }*/
+
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+  }
+
+  #hero h2 {
+    color: #bbbbbb;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+
+  #hero .btn-get-started {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #ffd452;
+    border: 2px solid #ffd452;
+  }
+
+    #hero .btn-get-started:hover {
+      background: #ffd452;
+      color: #fff;
     }
-}
 
-@media (max-width: 991px) {
+  #hero .hero-img img {
+    width: 267%;
+  }
+
+  #hero .hero-img .top {
+    margin-bottom: 280%;
+  }
+
+  #hero .hero-img .bottom {
+    margin-top: 160%;
+  }
+
+@media (max-width: 980px) {
   #hero {
     height: 100vh;
   }
@@ -445,11 +447,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 
       #hero .hero-img img {
-        width: 50%;
+        display: none;
       }
+
+  /*      #hero .hero-img .top {
+        margin-bottom: 280%;
+      }
+
+      #hero .hero-img .bottom {
+        margin-top: 160%;
+      }*/
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   #hero {
     margin-top: 20px;
   }
@@ -463,18 +473,22 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 30px;
-    }
+    }*/
 
-    #hero .hero-img img {
+/*    #hero .hero-img img {
       width: 70%;
-    }
+    }*/
 }
 
-@media (max-width: 575px) {
-  #hero .hero-img img {
+/*@media (max-width: 575px) {*/
+/*  #hero .hero-img img {
     width: 80%;
-  }
-}
+  }*/
+/*}*/
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
 
 @-webkit-keyframes up-down {
   0% {
@@ -496,9 +510,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -591,8 +606,10 @@ section {
   background-attachment: scroll;
 }
 
-  #about .animated {
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  #about .examples img {
+    width: 100%;
+    max-height: 200px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
   }
 
   #about .content-box {
@@ -601,13 +618,16 @@ section {
     padding: 30px;
   }
 
-  #about .content-padding {
+  #about .content .number {
+    width: 80px;
+    height: 80px;
     padding: 10px;
   }
 
   #about .content h3 {
     font-weight: 600;
     font-size: 26px;
+    word-wrap: break-word;
   }
 
   #about .content ul {
@@ -662,50 +682,47 @@ section {
 
 @media (min-width: 1024px) {
 
-    #about .about-img-1 img {
-      position: relative;
-      right: 180px;
-      max-width: none;
-      width: 150%;
-    }
+  #about .about-img-1 img {
+    position: relative;
+    right: 180px;
+    max-width: none;
+    width: 150%;
+  }
 
-    #about .about-img-2 img {
-      position: relative;
-      right: 0;
-      display: block;
-      margin: auto;
-      max-width: none;
-      width: 100%;
-      border-radius: 10px;
-    }
+  #about .about-img-2 img {
+    position: relative;
+    right: 0;
+    display: block;
+    margin: auto;
+    max-width: none;
+    width: 100%;
+    border-radius: 10px;
+  }
 
-    #about .about-img-3 img {
-      position: relative;
-      right: 0;
-      display: block;
-      margin: auto;
-      max-width: none;
-      width: 50%;
-    }
+  #about .about-img-3 img {
+    position: relative;
+    right: 0;
+    display: block;
+    margin: auto;
+    max-width: none;
+    width: 50%;
+  }
 }
 
 @media (max-width: 991px) {
-  #about {
-    height: 100vh;
+
+  #about .animated {
+    -webkit-animation: none;
+    animation: none;
   }
 
-    #about .animated {
-      -webkit-animation: none;
-      animation: none;
-    }
+  #about .about-img {
+    text-align: center;
+  }
 
-    #about .about-img {
-      text-align: center;
+    #about .about-img img {
+      width: 50%;
     }
-
-      #about .about-img img {
-        width: 50%;
-      }
 }
 
 @media (max-width: 768px) {
@@ -753,6 +770,67 @@ section {
     max-width: 80%;
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
   }
+
+/*--------------------------------------------------------------
+# Examples
+--------------------------------------------------------------*/
+
+#examples {
+  background-color: #434343;
+}
+
+  #examples img {
+    min-width: 300px;
+  }
+
+  #examples .flipper {
+    perspective: 500px;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+    #examples .flipper:hover {
+      transform: rotateY(180deg);
+    }
+
+    #examples .flipper .front {
+      z-index: 2;
+      /* for firefox 31 */
+      transform: rotateY(0deg);
+      position: relative;
+      backface-visibility: hidden;
+    }
+
+    /* back, initially hidden pane */
+    #examples .flipper .back {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 300px;
+      margin-left: -150px;
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    }
+
+  #examples .owl-nav, #examples .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  #examples .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd !important;
+  }
+
+    #examples .owl-dot.active {
+      background-color: #ffd452 !important;
+    }
 
 /*--------------------------------------------------------------
 # Purchase
