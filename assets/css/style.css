@@ -71,12 +71,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 90px;
   z-index: 997;
   transition: all 0.5s;
+  background: #434343;
 }
 
   #header.header-scrolled {
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
     height: 80px;
-    background: #434343;
   }
 
   #header .logo h1 {
@@ -104,11 +104,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+
   #header {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     height: 60px;
-    background: #333333;
+    z-index: 997;
+    transition: all 0.5s;
+    background: #434343;
   }
+
+    #header.header-scrolled {
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+      height: 60px;
+    }
 
     #header .logo h1 {
       font-size: 28px;
@@ -606,16 +614,59 @@ section {
   background-attachment: scroll;
 }
 
-  #about .examples img {
+  #about .item {
+    margin: 0 0 10px 0;
+  }
+
+    #about .item .construction img {
+      position: absolute;
+    }
+
+  #about img {
     width: 100%;
-    max-height: 200px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  #about .examples img {
+    border-radius: 20px;
+    margin-top: 30px;
   }
 
   #about .content-box {
     background-color: #444444;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  #about .about-img-1 img {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    display: block;
+    vertical-align: central;
+  }
+
+  #about .about-img-2 img {
+    position: relative;
+    right: 0;
+    display: block;
+    margin: auto;
+    max-width: none;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #about .about-img-3 img {
+    position: relative;
+    margin-top: 30px;
     border-radius: 20px;
-    padding: 30px;
+    /*    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.4);*/
+  }
+
+  #about .about-img-4 img {
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.4);
   }
 
   #about .content .number {
@@ -628,6 +679,11 @@ section {
     font-weight: 600;
     font-size: 26px;
     word-wrap: break-word;
+  }
+
+  #about .content span {
+    font-weight: 400;
+    font-size: 16px;
   }
 
   #about .content ul {
@@ -681,32 +737,6 @@ section {
     }
 
 @media (min-width: 1024px) {
-
-  #about .about-img-1 img {
-    position: relative;
-    right: 180px;
-    max-width: none;
-    width: 150%;
-  }
-
-  #about .about-img-2 img {
-    position: relative;
-    right: 0;
-    display: block;
-    margin: auto;
-    max-width: none;
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  #about .about-img-3 img {
-    position: relative;
-    right: 0;
-    display: block;
-    margin: auto;
-    max-width: none;
-    width: 50%;
-  }
 }
 
 @media (max-width: 991px) {
