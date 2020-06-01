@@ -197,9 +197,4 @@
     mirror: false
   });
 
-  //$('#hero-img-top').onload(function () {
-  //  $('#hero-img-top').css({ "-webkit-transform": "translate(100px,100px)" });
-  //});
-  //$('#hero-img-bottom').css({ 'margin-top': $('#hero-img-bottom').clientWidth * 0.5 });
-
 })(jQuery);

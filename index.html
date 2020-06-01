@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo/logo-2d-basic.png" rel="icon">
+  <link href="assets/img/logo/logo-2d-basic.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -41,17 +41,18 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-bg">
-    <div class="container d-flex align-items-center">
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center">
 
-      <div class="logo mr-auto">
-        <a href="index.html"><img src="assets/img/logo/logo-2d-shadow.png" alt="" class="img-fluid"></a>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo/logo-2d-basic.png" alt="" class="img-fluid first"></a>
+        <a href="index.html"><img src="assets/img/logo/logo-2d-dawn.png" alt="Isometric Logo" class="img-fluid second"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">Why Plansite?</a></li>
+          <li><a href="#why">Why Plansite?</a></li>
           <li><a href="#process">How it works</a></li>
           <li><a href="#examples">Examples</a></li>
           <li><a href="#purchase">Purchase</a></li>
@@ -65,11 +66,11 @@
     </div>
   </header><!-- End Header -->
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-12 pt-5 pt-lg-0 d-flex flex-column justify-content-center">
-          <img src="assets/img/logo/logo-full-white.png" alt="" class="logo" data-aos="fade-right">
+        <div class="col-lg-8 welcome">
+          <img src="assets/img/logo/logo-full-white.png" alt="" class="img-fluid" data-aos="fade-right">
           <h2 data-aos="fade-up" data-aos-delay="400">
             <em>Helping construction professionals make better visuals and decisions through our intuitive software</em>
           </h2>
@@ -77,10 +78,8 @@
             <a href="#about" class="btn-get-started scrollto">Try Demo!</a>
           </div>
         </div>
-        <div class="col-lg-2 col-sm-6 pt-5 pt-lg-0 hero-img d-flex flex-column justify-content-center img-fluid animated">
+        <div class="col-lg-4 pt-5 pt-lg-0 hero-img animated">
           <img src="assets/img/logo/logo-isometric-safety-shadow.png" class="top" alt="" data-aos="fade-down" data-aos-delay="200">
-        </div>
-        <div class="col-lg-2 col-sm-6 pt-5 pt-lg-0 hero-img d-flex flex-column justify-content-center img-fluid animated">
           <img src="assets/img/logo/logo-isometric-shadow.png" alt="" class="bottom" data-aos="fade-up" data-aos-delay="200">
         </div>
       </div>
@@ -90,132 +89,147 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about d-flex align-item-center">
-      <div class="container">
-        <!-- Item 1 -->
-        <div class="row item">
-          <div class="col-lg-6 order-2 order-lg-1 justify-content-center about-img-1" data-aos="fade-right" data-aos-delay="200">
+    <!-- ======= Why Section ======= -->
+    <section id="why" class="why">
+      <!-- Why 1 Section -->
+      <div class="container-fluid why-1 my-3">
+        <div class="row">
+          <div class="col-lg-6 mx-auto" data-aos="fade-right" data-aos-delay="200">
             <img class="img-fluid animated" src="assets/img/ui-setup.svg" alt="User Interface Example" />
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="200">
-            <div class="content content-box">
-              <div class="section-title">
-                <h2>Why PlanSite?</h2>
+          <div class="flex-column justify-content-center content content-box m-auto p-5" data-aos="fade-left" data-aos-delay="200">
+            <div class="section-title">
+              <h2>Why PlanSite?</h2>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="400">
+              <div class="flex-column">
+                <img src="assets/img/icon/number1.png" class="number" />
               </div>
-              <div class="row" data-aos="fade-up" data-aos-delay="400">
-                <div class="col-2">
-                  <img src="assets/img/icon/number1.png" class="number" />
-                </div>
-                <div class="col-10">
-                  <h3>
-                    Simple, intuitive to use and learn
-                  </h3>
-                  <p>
-                    Like a game!
-                  </p>
-                </div>
+              <div class="flex-column">
+                <h3>
+                  Simple, intuitive to use and learn
+                </h3>
+                <p>
+                  Like a game!
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- End Item 1 -->
-        <!-- Item 2 -->
-
-        <div class="row item examples">
-          <div class="col-lg-3 col-sm-6">
-            <img src="assets/img/renders/site-2d.png" alt="" data-aos="fade-up" data-aos-delay="100" />
+      </div>
+      <!-- End Why 1 Section -->
+      <!-- Why 2 Section -->
+      <div class="container-fluid why-2 my-5">
+        <div class="row examples pb-5">
+          <div class="col-lg-4">
+            <img src="assets/img/renders/site-2d.png" alt="" data-aos="fade-up" data-aos-delay="100" class="img-fluid" />
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <img src="assets/img/renders/tower-2.png" alt="" data-aos="fade-up" data-aos-delay="200" />
+          <div class="col-lg-4">
+            <img src="assets/img/gif/wheaton-PAC-SLP.gif" alt="" data-aos="fade-up" data-aos-delay="200" class="img-fluid" />
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <img src="assets/img/gif/wheaton-PAC-SLP.gif" alt="" data-aos="fade-up" data-aos-delay="300" />
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <img src="assets/img/renders/wheaton-pac-top.png" alt="" data-aos="fade-up" data-aos-delay="400" />
+          <div class="col-lg-4">
+            <img src="assets/img/renders/wheaton-pac-top.png" alt="" data-aos="fade-up" data-aos-delay="300" class="img-fluid" />
           </div>
         </div>
-
-        <div class="row item">
-          <div class="col-lg-6 order-1 order-lg-1 d-flex flex-column justify-content-center">
-            <div class="content">
-              <div class="row" data-aos="fade-right" data-aos-delay="400">
-                <div class="col-2">
-                  <img src="assets/img/icon/number2.png" class="number" />
-                </div>
-                <div class="col-10">
-                  <h3>
-                    Great finished product, quickly
-                  </h3>
-                  <p>
-                    Reduces manpower <br /> impresses clients
-                  </p>
-                </div>
+      </div>
+      <div class="container-fluid why-2 my-3">
+        <div class="row">
+          <div class="flex-column content m-auto p-5">
+            <div class="row" data-aos="fade-right" data-aos-delay="400">
+              <div class="flex-column">
+                <img src="assets/img/icon/number2.png" class="number" />
+              </div>
+              <div class="col flex-column">
+                <h3>Great finished product, quickly</h3>
+                <p>Reduces manpower <br /> Impresses clients</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 order-2 order-lg-2 justify-content-center about-img-2" data-aos="fade-left" data-aos-delay="200">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
             <img class="img-fluid animated" src="assets/img/comparisons/seattle-after.png" alt="Example Rendering" />
           </div>
         </div>
-        <!-- End Item 2 -->
-        <!-- Item 3 -->
-        <div class="row item">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center about-img-3 examples" data-aos="fade-right" data-aos-delay="200">
-            <img src="assets/img/gif/demo-extrude.gif" alt="Example Rendering" />
-            <img src="assets/img/gif/demo-rearrange.gif" alt="Example Rendering" />
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center">
-            <div class="content">
-              <div class="row" data-aos="fade-left" data-aos-delay="400">
-                <img src="assets/img/icon/number3.png" class="number" />
-                <div>
-                  <h3>
-                    Offsets needs for multiple <br /> expensive packages
-                  </h3>
-                  <h5>
-                    Built from the ground up <br /> in the Unity Game Engine
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <!-- End Why 2 Section -->
+      <!-- Why 3 Section -->
 
-        <div class="row item examples">
+      <div class="container-fluid why-3 my-3">
+        <div class="row examples p-5">
           <div class="col-lg-4" data-aos="fade-up">
-            <img src="assets/img/gif/2d-3d-rect.gif" alt="Example Rendering" />
+            <img src="assets/img/gif/demo-extrude.gif" alt="Example Rendering" />
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/gif/demo-corners.gif" alt="Example Rendering" />
+            <img src="assets/img/gif/demo-rearrange.gif" alt="Example Rendering" />
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
             <img src="assets/img/gif/demo-shapes.gif" alt="Example Rendering" />
           </div>
         </div>
-        <!-- End Item 3 -->
-        <!-- Item 4 -->
-        <div class="row item construction">
-          <div class="col-lg-6 order-1 order-lg-1 d-flex flex-column justify-content-center">
-            <div class="content">
-              <div class="row" data-aos="fade-right" data-aos-delay="400">
-                <img src="assets/img/icon/number4.png" class="number" />
-                <div>
+      </div>
+
+      <div class="container why-3 my-3">
+        <div class="row">
+          <div class="col-lg-6 mx-auto" data-aos="fade-right" data-aos-delay="200">
+            <img class="img-fluid animated" src="assets/img/gif/demo-corners.gif" alt="Example Rendering" />
+          </div>
+          <div class="col-lg-6 flex-column content m-auto p-5">
+            <div class="row" data-aos="fade-left" data-aos-delay="400">
+              <div class="flex-column">
+                <img src="assets/img/icon/number3.png" class="number" />
+              </div>
+              <div class="col flex-column">
+                <h3>Offsets needs for multiple expensive packages</h3>
+                <p>Built from the ground up in the Unity Game Engine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Why 3 Section -->
+    <!-- Why 4 Section -->
+    <section id="why-4" class="why">
+      <div class="container-fluid why-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="icon" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/icon/icon-env.png" alt="" />
+            </div>
+            <div class="icon" data-aos="fade-right" data-aos-delay="200">
+              <img src="assets/img/icon/icon-zone.png" alt="" />
+            </div>
+            <div class="icon" data-aos="fade-right" data-aos-delay="300">
+              <img src="assets/img/icon/icon-mat-sig.png" alt="" />
+            </div>
+            <div class="icon" data-aos="fade-right" data-aos-delay="400">
+              <img src="assets/img/icon/icon-equip.png" alt="" />
+            </div>
+          </div>
+          <div class="flex-column mx-auto">
+            <div class="content content-box p-5">
+              <div class="row" data-aos="fade-right">
+                <div class="flex-column">
+                  <img src="assets/img/icon/number4.png" class="number" />
+                </div>
+                <div class="col flex-column">
                   <h3>
-                    Comprehensive kit for <br /> necessary logistics <br /> elements, built-in
+                    Comprehensive kit for necessary logistics elements, built-in
                   </h3>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-1 justify-content-center about-img-4" data-aos="fade-left" data-aos-delay="200">
-            <img class="img-fluid animated" src="assets/img/construction-background.png" alt="Example Rendering" />
+            <div class="vehicles">
+              <div class="vehicle1" data-aos="fade-right" data-aos-delay="800">
+                <img src="assets/img/icon/bulldozer.png" alt="" />
+              </div>
+              <div class="vehicle2" data-aos="fade-left" data-aos-delay="1000">
+                <img src="assets/img/icon/excavator.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
-        <!-- End Item 4 -->
       </div>
-    </section><!-- End About Section -->
+      <!-- End Why 4 -->
+    </section> <!-- End Why -->
     <!-- ======= Process Section ======= -->
     <section id="process" class="process">
       <div class="container">
@@ -420,11 +434,11 @@
               <h3>PlanSite</h3>
               <p>Give us a shout if you have any questions</p>
               <!--              <div class="social-links">
-                    <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-                  </div>-->
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+              </div>-->
             </div>
           </div>
 
@@ -441,9 +455,9 @@
               </div>
 
               <!--              <div>
-                    <i class="ri-phone-line"></i>
-                    <p>+1 5589 55488 55s</p>
-                  </div>-->
+                <i class="ri-phone-line"></i>
+                <p>+1 5589 55488 55s</p>
+              </div>-->
 
             </div>
           </div>
