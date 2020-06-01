@@ -579,6 +579,15 @@ section {
     margin: 15px 0 0 0;
   }
 
+@media (max-width: 576px) {
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .section-title h2::before, .section-title h2::after {
+    width: 10px;
+  }
+}
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -678,10 +687,8 @@ section {
 }
 
 #why-4 .icon img {
-  width: 150px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 150px;
 }
 
 #why-4 .vehicles {
@@ -715,6 +722,24 @@ section {
     animation: none;
   }
 
+}
+
+@media (max-width: 576px) {
+  #why-4 {
+    background-image: none;
+  }
+
+  .why .content {
+    min-width: unset;
+  }
+
+    .why .content h3 {
+      font-size: 20px;
+    }
+
+  .why .content-box {
+    min-width: unset;
+  }
 }
 
 /*--------------------------------------------------------------
