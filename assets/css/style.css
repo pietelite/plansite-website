@@ -639,6 +639,7 @@ section {
 
 .why .examples img {
   height: 100%;
+  max-height: 400px;
   width: 100%;
 }
 
