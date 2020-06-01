@@ -668,7 +668,7 @@ section {
   background-color: #292929;
   background-image: url("../img/construction-background.png");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: auto 120vh;
   background-position: 50% 0;
   background-attachment: scroll;
 }
